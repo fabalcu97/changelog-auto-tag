@@ -1,0 +1,40 @@
+{
+  "name": "changelog-auto-tag",
+  "version": "0.0.1",
+  "description": "Auto tag based on the changelog",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "prepublish": "tsc",
+    "dev": "tsc --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fabalcu97/changelog-auto-tag.git"
+  },
+  "keywords": [
+    "auto",
+    "tag",
+    "changelog"
+  ],
+  "author": "fabalcu97",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fabalcu97/changelog-auto-tag/issues"
+  },
+  "homepage": "https://github.com/fabalcu97/changelog-auto-tag#readme",
+  "dependencies": {
+    "escape-string-regexp": "^4.0.0",
+    "git-tag": "^0.2.0",
+    "yargs": "^16.2.0"
+  },
+  "bin": {
+    "changelog-auto-tag": "./dist/cli.js"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.14",
+    "@types/yargs": "^15.0.12",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.1.3"
+  }
+}
